@@ -6,8 +6,9 @@ class TodoItems extends Component{
         return (
             <div className = "TodoItems">
 
-                Hello Todo item
-                <p>tesst</p>
+                <span>id: {this.props.key}</span> <span>Tasks: {this.props.task}</span> 
+                <p>Result: {this.props.result}</p>
+                
             </div>
         )
 
