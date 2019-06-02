@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 class TodoItems extends Component{
-    return(){
+    render(){
         return (
             <div>
 
