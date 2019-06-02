@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class TodoItem extends Component{
+class TodoItems extends Component{
     
     return(){
         return ()
