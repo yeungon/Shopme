@@ -14,4 +14,4 @@ class TodoItems extends Component{
     
 }
 
-export default TodoItem;
+export default TodoItems;
