@@ -9,11 +9,13 @@ class App extends Component {
     return (
       <div className="App">
        <h3> Vuong's todo list </h3>
-       <TodoItem/>
+      <p> wwhat?</p>
+      
+       <TodoItems/>
 
       </div>
     );
-  }
+  } 
 }
 
 export default App;
