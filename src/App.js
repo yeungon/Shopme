@@ -86,7 +86,8 @@ class App extends Component {
 
         {/* Get the value from state, state get from API using fetch */}
         <br/>
-        You are viewing data from API swapi.co: Actor name: {this.state.character.name}, and gender : {this.state.character.gender}
+
+        {displaying}
                         
       </div>
     );
