@@ -28,20 +28,49 @@ class App extends Component {
   constructor(){
     super();
     
-    this.todoItem = Vuongtask;
-
-    this.todoItem = this.todoItem.map((item, index) => <TodoItems key = {index} task = {item.text} completed = {item.completed} result = {item.result}/>);
+    this.state = {
+      TodoItems: Vuongtask
+    }
     
+    this.loginState = {
+      isLog: true,
+      name: "Vuong"
+    };
+
   }
-  
+
+     //method
+
+     handleClick(e){
+    
+      e.preventDefault();
+      alert("hello world") ;
+      console.log("test");
+    }
+
+ 
   render() {
+
+    let result = '';
+
+    if(this.loginState.isLog === true){
+      result = "in";
+    }else{
+      result = "out";
+    }
+
+    const itemRender = this.state.TodoItems.map((item, index) => <TodoItems key = {index} task = {item.text} completed = {item.completed} result = {item.result}/>);
+ 
     return (
       <div className="App">
         <Headercomponent/> 
                 
-        {this.todoItem}
-       
+        {itemRender}
 
+        <button onClick = {this.handleClick}>Click Me</button>
+        
+        Hello {this.loginState.name}. You are logging {result};
+                        
       </div>
     );
   } 
