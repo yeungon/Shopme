@@ -40,6 +40,8 @@ class App extends Component {
       name: "Vuong"
     };
 
+    this.handleClick = this.handleClick.bind(this);
+
   }
 
   //method
