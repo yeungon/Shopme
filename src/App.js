@@ -32,6 +32,7 @@ class App extends Component {
       TodoItems: Vuongtask,
       character: {},
       loading: false,
+      count: 0
     }
     
     this.loginState = {
