@@ -49,21 +49,23 @@ class App extends Component {
   handleClick(e){
 
     e.preventDefault();
-    alert("hello world") ;
-    console.log("test");
+    this.setState(prevState => {
+        return {
+          count: prevState.count + 1
+        }
+      })
+    
   }
 
   componentDidMount(){
     //Set the state.loading to true
 
     this.setState({loading: true});
-
     fetch("https://swapi.co/api/people/1")
       .then(response => response.json())
       .then(responsejson => {
         //Return the API to state
         this.setState({
-          
           //Update the loading to true, so that it display the content from async fetch() request
           loading: false,
           character: responsejson
