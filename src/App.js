@@ -86,7 +86,6 @@ class App extends Component {
     }
  
     //login or not login
-
     let result = '';
 
     if(this.loginState.isLog === true){
