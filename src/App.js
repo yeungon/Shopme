@@ -40,14 +40,25 @@ class App extends Component {
 
   }
 
-     //method
+  //method
 
-     handleClick(e){
-    
-      e.preventDefault();
-      alert("hello world") ;
-      console.log("test");
-    }
+  handleClick(e){
+
+    e.preventDefault();
+    alert("hello world") ;
+    console.log("test");
+  }
+
+  componentDidMount(){
+    fetch("https://swapi.co/api/people/1")
+      .then(response => response.json())
+      .then(responsejson => {
+        //Return the API to state
+        this.setState({
+          character: responsejson
+        })
+      })
+  }
 
  
   render() {
