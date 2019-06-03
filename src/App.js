@@ -102,13 +102,19 @@ class App extends Component {
                 
         {itemRender}
 
+        <br/>
+        <h1>{this.state.count}</h1>
+        <br/>
         <button onClick = {this.handleClick}>Click Me</button>
+        <br/>
+        <br/>
         
         Hello {this.loginState.name}. You are logging {result};
-
-        {/* Get the value from state, state get from API using fetch */}
+        
+        <br/>
         <br/>
 
+        {/* Get the value from state, state get from API using fetch */}
         {displaying}
                         
       </div>
