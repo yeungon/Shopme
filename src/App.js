@@ -29,7 +29,8 @@ class App extends Component {
     super();
     
     this.state = {
-      TodoItems: Vuongtask
+      TodoItems: Vuongtask,
+      character: {}
     }
     
     this.loginState = {
