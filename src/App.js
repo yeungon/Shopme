@@ -82,6 +82,10 @@ class App extends Component {
         <button onClick = {this.handleClick}>Click Me</button>
         
         Hello {this.loginState.name}. You are logging {result};
+
+        {/* Get the value from state, state get from API using fetch */}
+        <br/>
+        You are viewing data from API swapi.co: Actor name: {this.state.character.name}, and gender : {this.state.character.gender}
                         
       </div>
     );
