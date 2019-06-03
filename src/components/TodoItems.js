@@ -6,7 +6,7 @@ class TodoItems extends Component{
         return (
             <div className = "TodoItems">
 
-                <span>id: {this.props.key}</span> <span>Tasks: {this.props.task}</span> 
+                <span> <input type = "checkbox"/> {this.props.key}</span> <span>Tasks: {this.props.task}</span> 
                 <p>Result: {this.props.result}</p>
                 
             </div>
