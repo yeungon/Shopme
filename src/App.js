@@ -51,18 +51,36 @@ class App extends Component {
   }
 
   componentDidMount(){
+    //Set the state.loading to true
+
+    this.setState({loading: true});
+
     fetch("https://swapi.co/api/people/1")
       .then(response => response.json())
       .then(responsejson => {
         //Return the API to state
         this.setState({
+          
+          //Update the loading to true, so that it display the content from async fetch() request
+          loading: false,
           character: responsejson
         })
       })
   }
 
+   render() {
+
+    //Rendering the data from asyn request
+    let displaying = "";
+
+    if (this.state.loading === true){
+      displaying = "Please waiting the request";
+  
+    }else{
+      displaying = "You are viewing data from API swapi.co: Actor name: " + this.state.character.name + ". Gender is: " + this.state.character.gender;
+    }
  
-  render() {
+    //login or not login
 
     let result = '';
 
