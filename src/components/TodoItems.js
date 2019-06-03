@@ -6,7 +6,11 @@ class TodoItems extends Component{
         return (
             <div className = "TodoItems">
 
-                <span> <input type = "checkbox"/> {this.props.key}</span> <span>Tasks: {this.props.task}</span> 
+                <span> 
+                    <input type = "checkbox" onChange = {() => {console.log("Change")}}/>
+                </span> 
+                
+                <span>Tasks: {this.props.task}</span> 
                 <p>Result: {this.props.result}</p>
                 
             </div>
