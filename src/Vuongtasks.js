@@ -25,8 +25,8 @@ const Vuongtask = [
     },
     {
         id: 5,
-        text: "Catch up on Arrested Development hhjhu",
-        completed: false,
+        text: "Mastering Symfony, building API",
+        completed: true,
         result: "done"
     
     }
