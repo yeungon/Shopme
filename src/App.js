@@ -42,12 +42,13 @@ class App extends Component {
 
     this.handleClick = this.handleClick.bind(this);
 
+    this.handleChange = this.handleChange.bind(this);
+
   }
 
   //method
 
   handleClick(e){
-
     e.preventDefault();
     this.setState(prevState => {
         return {
