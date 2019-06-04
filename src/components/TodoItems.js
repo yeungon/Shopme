@@ -3,6 +3,12 @@ import './TodoItems.css';
 
 class TodoItems extends Component{
     render(){
+        const styleCompleted = {
+            fontStyle: "italic",
+            color: "red",
+            textDecoration: "line-through"
+        };
+
         return (
             <div className = "TodoItems">
 
