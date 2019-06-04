@@ -23,7 +23,7 @@ class TodoItems extends Component{
                 </span> 
                 
                 <p style = {this.props.completed ? styleCompleted: null}>Tasks: {this.props.task}</p> 
-                <p>Result: {this.props.result}</p>
+                <p>Result: {result}</p>
                                
             </div>
         )
