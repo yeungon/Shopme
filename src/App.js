@@ -65,11 +65,10 @@ class App extends Component {
     this.setState(prevState => {
       const updateTodos = prevState.TodoItems.map(todo =>{
         if(todo.id === id){
-          TodoItems.completed =! todo.completed;
+          todo.completed =! todo.completed;
         }
         return todo;
       })
-
       return {
         TodoItems: updateTodos
       }
