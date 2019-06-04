@@ -114,11 +114,26 @@ class App extends Component {
       result = "out";
     }
 
+    // The complete task
+    var completetrue = 0;
+    this.state.TodoItems.map((item) =>{
+          
+          if(item.completed){
+            completetrue++
+          }
+           
+          return completetrue;
+           
+    });
+
+    // Passsing to the TotoItems component
     const itemRender = this.state.TodoItems.map((item, index) => <TodoItems key = {index} task = {item.text} completed = {item.completed} id = {item.id}  handleChangeFromApp = {this.handleChange}/>);
  
     return (
       <div className="App">
         <Headercomponent/> 
+
+        <span>Total number of task: {this.state.TodoItems.length}. Completed: {completetrue}</span><br/><br/>
                 
         {itemRender}
 
