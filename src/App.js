@@ -57,6 +57,26 @@ class App extends Component {
       })
     
   }
+  
+  //handle Change, then pass to the child Component TodoItems
+
+  handleChange(id){
+
+    this.setState(prevState => {
+      const updateTodos = prevState.TodoItems.map(todo =>{
+        if(todo.id === id){
+          TodoItems.completed =! todo.completed;
+        }
+        return todo;
+      })
+
+      return {
+        TodoItems: updateTodos
+      }
+    })
+
+  }
+
 
   componentDidMount(){
     //Set the state.loading to true
