@@ -115,7 +115,7 @@ class App extends Component {
       result = "out";
     }
 
-    const itemRender = this.state.TodoItems.map((item, index) => <TodoItems key = {index} task = {item.text} completed = {item.completed} result = {item.result}/>);
+    const itemRender = this.state.TodoItems.map((item, index) => <TodoItems key = {index} task = {item.text} completed = {item.completed} id = {item.id} result = {item.result} handleChangeFromApp = {this.handleChange}/>);
  
     return (
       <div className="App">
