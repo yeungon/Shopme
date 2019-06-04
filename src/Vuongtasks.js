@@ -2,30 +2,30 @@ const Vuongtask = [
     {
         id: 1,
         text: "Writing the three last chapters",
-        completed: true,
+        completed: false,
         result: "on going"
     },
     {
         id: 2,
         text: "Applying for the Fullstack Web position",
         completed: false,
-        result: "done"
+        result: "on going"
     },
     {
         id: 3,
         text: "Mastering ReactJs and likely React Native",
         completed: false,
-        result: "done"
+        result: "on going"
     },
     {
         id: 4,
-        text: "Mow lawn",
+        text: "NodeJS, Nextjs && MERN stack",
         completed: true,
-        result: "done"
+        result: "on going"
     },
     {
         id: 5,
-        text: "Mastering Symfony, building API",
+        text: "Mastering WordPress",
         completed: true,
         result: "done"
     
