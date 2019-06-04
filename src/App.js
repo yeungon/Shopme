@@ -79,14 +79,13 @@ class App extends Component {
 
   componentDidMount(){
     //Set the state.loading to true
-
     this.setState({loading: true});
     fetch("https://swapi.co/api/people/1")
       .then(response => response.json())
       .then(responsejson => {
         //Return the API to state
         this.setState({
-          //Update the loading to true, so that it display the content from async fetch() request
+          //Update the loading to false, meaning the request is done, and it displays the content from async fetch() request
           loading: false,
           character: responsejson
         })
