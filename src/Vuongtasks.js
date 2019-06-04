@@ -1,19 +1,19 @@
 const Vuongtask = [
     {
         id: 1,
-        text: "Take out the trash",
+        text: "Writing the three last chapters",
         completed: true,
-        result: "done"
+        result: "on going"
     },
     {
         id: 2,
-        text: "Grocery shopping",
+        text: "Applying for the Fullstack Web position",
         completed: false,
         result: "done"
     },
     {
         id: 3,
-        text: "Clean gecko tank",
+        text: "Mastering ReactJs and likely React Native",
         completed: false,
         result: "done"
     },
