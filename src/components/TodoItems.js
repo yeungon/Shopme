@@ -7,12 +7,16 @@ class TodoItems extends Component{
             <div className = "TodoItems">
 
                 <span> 
-                    <input type = "checkbox" onChange = {() => {console.log("Change")}}/>
+                    <input 
+                        type = "checkbox" 
+                        onChange = {() => this.props.handleChangeFromApp(this.props.id)}
+                        checked  = {this.props.completed}
+                    />
                 </span> 
                 
                 <span>Tasks: {this.props.task}</span> 
                 <p>Result: {this.props.result}</p>
-                
+                               
             </div>
         )
 
