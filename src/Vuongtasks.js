@@ -26,7 +26,7 @@ const Vuongtask = [
     {
         id: 5,
         text: "Mastering WordPress",
-        completed: true,
+        completed: false,
         result: "done"
     
     }
