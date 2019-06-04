@@ -9,6 +9,8 @@ class TodoItems extends Component{
             textDecoration: "line-through"
         };
 
+        let result = this.props.completed ? "Done" : "On going";
+
         return (
             <div className = "TodoItems">
 
