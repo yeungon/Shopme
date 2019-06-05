@@ -8,12 +8,16 @@ class TodoItems extends Component{
             color: "red",
             textDecoration: "line-through"
         };
+        
+        const classCompleted = {
+            backgroundColor :  "#ddd",
+        }
+
 
         let result = this.props.completed ? "Done" : "On going";
 
         return (
-            <div className = "TodoItems">
-
+            <div className = "TodoItems" style = {this.props.completed ? classCompleted: null}>
                 <span> 
                     <input 
                         type = "checkbox" 
