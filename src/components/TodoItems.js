@@ -1,35 +1,45 @@
 import React, { Component } from 'react';
 import './TodoItems.css';
+import { fontWeight } from '@material-ui/system';
 
 class TodoItems extends Component{
     render(){
         const styleCompleted = {
-            fontStyle: "italic",
-            color: "red",
-            textDecoration: "line-through"
+            color: "#3b5998",
+            textDecoration: "wavy",
+            
         };
         
         const classCompleted = {
-            backgroundColor :  "#ddd",
-        }
-
+            backgroundColor :  "#f7f7f7",
+        };
 
         let result = this.props.completed ? "Done" : "On going";
 
         return (
-            <div className = "TodoItems" style = {this.props.completed ? classCompleted: null}>
-                <span> 
-                    <input 
-                        type = "checkbox" 
-                        onChange = {() => this.props.handleChangeFromApp(this.props.id)}
-                        checked  = {this.props.completed}
-                    />
-                </span> 
+            <div>
                 
-                <p style = {this.props.completed ? styleCompleted: null}>Tasks: {this.props.task}</p> 
+                {/* <span className="itemnumber">{this.props.id}</span> */}
+                <span> 
+                        
+                        <label className="container">
+                        <input 
+                            type="checkbox" 
+                            checked={this.props.completed}
+                            onChange = {() => this.props.handleChangeFromApp(this.props.id)}
+                            />
+                        <span className="checkmark"></span>
+                        </label>
 
-                <p>Result: {result}</p>
-                               
+                </span> 
+
+                <div className = "TodoItems" style = {this.props.completed ? classCompleted: null}>
+                    
+                    <p style = {this.props.completed ? styleCompleted: null}> {this.props.task}</p> 
+
+                    <p className = "resultitem"> {result}</p>
+                                
+                </div>
             </div>
         )
 

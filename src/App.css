@@ -1,37 +1,91 @@
+.title{
+  font-family: 'Inter', -system-ui, system-ui, sans-serif;
+  color: #010101;
+   margin: 0.5em 0 0.3em 0;
+  -webkit-font-smoothing: antialiased;
+  font-size: 55px;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  line-height: 1.1;
+  display: inline-block;
+  
+    
+}
+
+.sub-title{
+  font-size: 80%;     
+  margin-left: 2%;
+}
+
+
 .App {
   text-align: left;
-  background-color: #fff;
-  max-width: 1200px;
+  background-color: #f7f7f7;
+  max-width: 1000px;
   margin:auto;
-  margin-top: 1%;
+  margin-top: 1px;
   padding: 0.5%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+
+.itemnumber{
+  border: 1px solid rgb(246, 248, 246);
+  font-family: 'Inter', -system-ui, system-ui, sans-serif!important;
+  height: 15px;
+  width: 15px;
+  padding: 2%;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(98, 43, 185);
+  text-align: center;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.itemnumbercompleted{
+  border: 1px solid rgb(246, 248, 246);
+  height: 13px;
+  width: 13px;
+  padding: 2%;
+  border-radius: 50%;
+  display: inline-block;
+  background-color:#f50057;
+  text-align: center;
+  color: #fff;
+  vertical-align:50%;
+  font-size: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.header{
+  list-style-type: none;
+  padding: 0;
+  padding-left: 80%;
+  margin: 0;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header li{
+  display: inline;
+  margin-left: 5%;
+  padding: 1%;
+      
+  
 }
+
+.header a:link{
+  text-decoration: none;
+}
+
+.header li:visited {
+  background-color: cyan;
+}
+
+.header li:hover {
+  background-color: lightgreen;
+  color: #fff;
+}
+
+.header li:active {
+  background-color: hotpink;
+} 

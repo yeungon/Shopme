@@ -1,31 +1,37 @@
 const Vuongtask = [
     {
         id: 1,
-        text: "Writing the three last chapters",
+        text: "Frontend stack",
         completed: false,
         
     },
     {
         id: 2,
-        text: "Applying for the Fullstack Web position",
+        text: "Backend stack",
         completed: false,
         
     },
     {
         id: 3,
-        text: "Mastering ReactJs and likely React Native",
+        text: "Cloud Platforms",
         completed: false,
         
     },
     {
         id: 4,
-        text: "NodeJS, Nextjs && MERN stack",
+        text: "Development Tools",
         completed: false,
         
     },
     {
         id: 5,
-        text: "Mastering WordPress",
+        text: "Vision and dream",
+        completed: false,
+        
+    },
+    {
+        id: 6,
+        text: "Traits and personality",
         completed: true,
         
     
